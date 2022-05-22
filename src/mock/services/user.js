@@ -476,27 +476,26 @@ const userNav = options => {
   const nav = [
     // mypage
     {
-      name: 'Index',
+      name: 'dashboard',
       parentId: 0,
-      id: 1001,
+      id: 1,
       meta: {
-        icon: 'dashboard',
+        icon: 'home',
         title: '主页',
         show: true
       },
       component: 'RouteView',
-      redirect: '/dashboard/workplace'
+      redirect: '/dashboard/analysis'
     },
     {
-      name: 'Analysis',
-      parentId: 1001,
-      id: 1002,
+      name: 'analysis',
+      parentId: 1,
+      id: 2,
       meta: {
         title: '分析页',
         show: true
       },
-      component: 'Analysis',
-      path: '/dashboard/analysis'
+      component: 'Analysis'
     }
     // // dashboard
     // {
